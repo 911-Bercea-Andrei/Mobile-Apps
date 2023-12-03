@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    tools:context=".AddPlantActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update plant"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etvName"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="@string/name"
+        android:padding="10dp"
+        android:textColor="@color/fern_green"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/etvSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="@string/species"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/etvName"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/etvInterval"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="@string/interval"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/etvSpecies"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/etvLastWatered"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="@string/lastWatered"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/etvInterval"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/etvReminderTime"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="@string/reminderTime"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/etvLastWatered"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/bttnSave"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/fern_green"
+        android:contentDescription="Save Button"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_add_24"
+        android:drawablePadding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etvReminderTime" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
